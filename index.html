@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Layout</title>
+</head>
+<style>
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial;
+    padding: 10px;
+    background: #d2d1d1;
+}
+
+
+/*navbar*/
+
+.navbar{
+    overflow: hidden;
+    color: 333;
+}
+.navbar a{
+    float: left;
+    display: block;
+    color: teal;
+    text-decoration: none;
+    padding: 14px 16px;
+    align-items: center;
+}
+
+.navbar a:hover{
+    background-color:teal;
+    color: #ffff;
+}
+
+/*leftColumn*/
+
+.leftcolumn{
+    float: left;
+    width: 75%;
+}
+
+.rightcolumn{
+    float: right;
+    width: 25%;
+    padding-left: 20px;
+}
+
+.img{
+    padding: 20px;
+}
+
+/*card*/
+.card{
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+
+}
+
+.row::after{
+    content:"";
+    display: table;
+    clear: both;
+}
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+
+
+</style>
+<body>
+    <!--Navbar-->
+    <div class="navbar">
+        <a href="#">home</a>
+        <a href="#">about</a>
+        <a href="#">call</a>
+        <a href="#" style="float:right">call</a>
+    </div>
+
+
+    <div class="row">
+        <div class="leftcolumn">
+            <div class="card">
+                <h2>
+                    Hello this is Meishi
+                </h2>
+                <h5> i was born in march, 29th 2080</h5>
+                <img src="IMG_20240420_070225_509.jpg" class="img" style="height: 200px;">
+                <p>About me..</p>
+                <p>johaeso mian johaeso mian mori apeuda yeobuseo? Mian he mian he hajima<br>
+                     nega core hajianana pargan yeppeun ipseulo osu norul jugigo naa, naeneun <br>
+                    gwenchanaa 
+                </p>
+            </div>
+
+            <div class="card">
+                <h2>
+                    Hello this is Meishi
+                </h2>
+                <h5> i was born in march, 29th 2080</h5>
+                <img src="IMG_20240420_070225_509.jpg" class="img" style="height: 200px;">
+                <p>About me..</p>
+                <p>johaeso mian johaeso mian mori apeuda yeobuseo? Mian he mian he hajima
+                     nega core hajianana pargan yeppeun ipseulo osu norul jugigo naa, naeneun 
+                    gwenchanaa 
+                </p>
+            </div>
+        </div>
+
+        <div class="rightcolumn">
+            <div class="card">
+                <h2>About me</h2>
+                <img src="Bin.jpg" class="img" style="height: 100px;">
+                <p>Changbin ssi, Johaheso mian he if loving you is asin thank you for everything</p>
+
+            </div>
+
+            <div class="card">
+                <h2>Popular post</h2>
+                <img src="Yu.jpg" class="img" style="height: 100px;">
+                <img src="Bin.jpg" class="img" style="height: 100px;">
+                <img src="IMG_20240420_070225_509.jpg" class="img" style="height: 100px;">
+            </div>
+
+            <div class="card">
+                <h2>Follow me</h2>
+                <p>Changbin ssi, Johaheso mian he if loving you is asin thank you for everything</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="Footer">
+        <h2>Footer</h2>
+    </div>
+
+</body>
+</html>
